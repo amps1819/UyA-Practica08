@@ -1,0 +1,14 @@
+/* Para deshabilitar la opción de selección en imágenes */
+img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Para deshabilitar la opción de selección en cualquier elemento (class="noselect") */
+.noselect {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
