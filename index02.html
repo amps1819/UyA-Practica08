@@ -3,33 +3,49 @@
     <head>
         <title>Club de lectura</title>
         <meta charset="utf-8">
-        <link href="https://www.w3schools.com/favicon.ico" type="image/x-icon" rel="icon">
-        <!-- Styles -->
-        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen">
-        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen">
+        <link href="img/favicon.png" type="image/x-icon" rel="icon">
+        <!-- CSS -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     </head>
     <body>
-        <nav class="light-blue lighten-1">
-            <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo right">Cdl</a>
-                <ul class="left hide-on-med-and-down">
-                    <li><a href="index.html">Fantasía heroica</a></li>
-                    <li class="active"><a href="#">Ciencia ficción</a></li>
-                    <li><a href="#">Infantil</a></li>
-                    <li><a href="#">Ensayo</a></li>
-                </ul>
+
+        <!-- Barra de Navegación -->
+        <nav class="yellow darken-4">
+            <div class="nav-wrapper container">
+                <a href="index.html" class="brand-logo push-s2">Club de Lectura</a>
             </div>
-        </nav>
+    </nav>
+    <nav class="yellow darken-4">
+        <div class="nav-wrapper container">
+            <ul class="left hide-on-med-and-down">
+                <li><a id="logo-container" href="index.html">Inicio</a></li>
+                <li><a href="index01.html">Fantasía heroica</a></li>
+                <li class="active"><a href="index02.html">Ciencia ficción</a></li>
+                <li><a href="#">Infantil</a></li>
+                <li><a href="#">Ensayo</a></li>
+            </ul>
+            <ul class="sidenav" id="nav-mobile">
+                <li><a id="logo-container" href="index.html">Inicio</a></li>
+                <li><a href="index01.html">Fantasía heroica</a></li>
+                <li class="active"><a href="index02.html">Ciencia ficción</a></li>
+                <li><a href="#">Infantil</a></li>
+                <li><a href="#">Ensayo</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+        <!-- Contenido -->
         <!-- Scripts - jQuery -->
         <script src="js/jquery-3.3.1.js"></script>
         <div class="section no-pad-bot" id="index-banner">
             <div class="container">
                 <div class="row center">
-                    <h1 class="header center orange-text">Club de lectura</h1>
-                    <h2 class="header center blue-text">La mejor forma de ocupar tu tiempo libre</h2>
-                </div>
-                <div class="row center">
+                    <h1 class="header col s12">Obras de ciencia ficción</h1>
                     <div class="carousel">
-                        <h3 class="header col s12">Obras de ciencia ficción</h3>
+                        <!-- <h1 class="header col s12">Obras de ciencia ficción</h1> -->
                         <a class="carousel-item" href="#one!"><img src="img/dltall.jpg" alt="Portada de la novela de Julio Verne, De la Tierra a la Luna"></a>
                         <a class="carousel-item" href="#two!"><img src="img/lmdt.jpg" alt="Portada de la novela de H. G. Wells, La máquina del tiempo"></a>
                         <a class="carousel-item" href="#three!"><img src="img/fei.jpg" alt="Portada de la novela de Isaac Asimov, Fundación e imperio"></a>
@@ -38,7 +54,7 @@
                     </div>
                 </div>
                 <div class="row center">
-                    <h3 class="header col s12">Autores de ciencia ficción</h3>
+                    <h2 class="header col s12">Autores de ciencia ficción</h2>
                     <div class="container">
                         <div class="section">
                             <div class="row">
@@ -69,16 +85,29 @@
                 </div>
             </div>
         </div>
-        <footer class="page-footer orange">
-            <div class="footer-copyright">
+
+        <!-- Footer -->
+        <footer class="page-footer yellow darken-4">
                 <div class="container">
-                    Made by Grupo 6 - Alexandre | Borja | Manuel  with <a class="orange-text text-lighten-3" href="http://materializecss.com" target="_blank">Materialize</a> and <a class="orange-text text-lighten-3" href="http://jquery.com/" target="_blank">jQuery</a>.
+                    <div class="row">
+                        <div class="col l6 s12">
+                            <p class="white-text"><strong>GRUPO 6</strong></p>
+                            <p class="grey-text text-lighten-4">Alexandre | Borja | Manuel</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </footer>
-        <!-- Scripts -->
+                <div class="footer-copyright">
+                    <div class="container">
+                        © UyA - 2018-19 - Made by with <a class="orange-text text-lighten-3" href="http://materializecss.com" target="_blank">Materialize</a> and <a class="orange-text text-lighten-3" href="http://jquery.com/" target="_blank">jQuery</a>.
+                    </div>
+                </div>
+            </footer>
+
+        <!-- Post-charged scripts -->
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="js/init-jq.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="js/materialize.js"></script>
         <script src="js/init.js"></script>
-        <script src="js/init-jq.js"></script>
     </body>
 </html>

@@ -4284,7 +4284,6 @@ nav.nav-extended {
 nav.nav-extended .nav-wrapper {
   min-height: 56px;
   height: auto;
-  margin: 0;
 }
 
 nav.nav-extended .nav-content {
@@ -4915,7 +4914,7 @@ small {
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
-  color: #ef6c00;
+  color: #ffab40;
   margin-right: 24px;
   -webkit-transition: color .3s ease;
   transition: color .3s ease;
@@ -9086,8 +9085,6 @@ input[type=range]::-ms-thumb {
 }
 
 #cabecera {
-  background-image: url("../img/fondo.png");
-  background-repeat: no-repeat;
-  height: 90vh;
-  background-size: cover;
+  background-image: url("../img/large.jpg");
+  background-color: #cccccc;
 }
