@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>UyA - Práctica 07: Firebase</title>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <h1>Formulario de inserción de obras - alpha 0.1.0 </h1>
+    <p>Información: <strong><span id="informacion"></span></strong></p>
+    <form id="insertarF">
+        <div>
+            <label>Identificador</label>
+            <input id="identificador" placeholder="cronica">
+            <label id="label0" class="flecha"></label>
+        </div>
+        <div>
+            <label>Autor</label>
+            <input id="autor" placeholder="Gabriel García Márquez" size="50">
+            <label id="label1" class="flecha"></label>
+        </div>
+        <div>
+            <label>Año</label>
+            <input id="año" type="number" placeholder="1981">
+            <label id="label2" class="flecha"></label>
+        </div>
+        <div>
+            <label>Título</label>
+            <input id="título" placeholder="Crónica de una muerte anunciada" size="50">
+            <label id="label3" class="flecha"></label>
+        </div>
+        <div><input type="submit" value="Insertar entrada"></div>
+    </form>
+    <h1>Formulario de recogida de obras - alpha 0.1.0 </h1>
+    <p>Información: <strong><span id="informacionRE"></span></strong></p>
+    <form  id="recogerF">
+        <div>
+            <label>Identificador</label>
+            <input id="identificadorRE" placeholder="cronica">
+            <label id="label0RE" class="flecha"></label>
+        </div>
+        <div>
+            <label>Autor: </label>
+            <label id="autorRE" size="50"></label>
+        </div>
+        <div>
+            <label>Año: </label>
+            <label id="añoRE"></label>
+        </div>
+        <div>
+            <label>Título: </label>
+            <label id="títuloRE"size="50"></label>
+        </div>
+        <div><input type="submit" value="Recoger entrada"></div>
+    </form>
+    <script src="./js/form.js"></script>
+</body>
+</html>
