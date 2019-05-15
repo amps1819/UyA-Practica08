@@ -9091,3 +9091,14 @@ input[type=range]::-ms-thumb {
   height: 90vh;
   background-size: cover;
 }
+
+input + [role="tooltip"] {
+	display: none;
+}
+
+/* ¿Modificar con js para que se oculte al pulsar ESC? */
+input:focus + [role="tooltip"] {
+	display: block;
+	position: absolute;
+	top: 100%;
+}
