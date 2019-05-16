@@ -12,30 +12,35 @@
     <body>
 
         <!-- Barra de Navegación -->
+        <div role="heading">
+            <nav class="yellow darken-4">
+                    <div class="nav-wrapper container">
+                        <a href="index.html" class="brand-logo" id="logo">
+                            <img id="logo-img" src="img/favicon_blanco.png" alt="Logo del Club de Lectura">
+                            CDL
+                        </a>
+                    </div>
+            </nav>
+        </div>
         <nav class="yellow darken-4">
             <div class="nav-wrapper container">
-                <a href="index.html" class="brand-logo push-s2">Club de Lectura</a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a id="logo-container" href="index.html">Inicio</a></li>
+                    <li class="active"><a href="index01.html">Fantasía heroica</a></li>
+                    <li><a href="index02.html">Ciencia ficción</a></li>
+                    <li><a href="#">Infantil</a></li>
+                    <li><a href="#">Ensayo</a></li>
+                </ul>
+                <ul class="sidenav" id="nav-mobile">
+                    <li><a id="logo-container" href="index.html">Inicio</a></li>
+                    <li class="active"><a href="index01.html">Fantasía heroica</a></li>
+                    <li><a href="index02.html">Ciencia ficción</a></li>
+                    <li><a href="#">Infantil</a></li>
+                    <li><a href="#">Ensayo</a></li>
+                </ul>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             </div>
-    </nav>
-    <nav class="yellow darken-4">
-        <div class="nav-wrapper container">
-            <ul class="left hide-on-med-and-down">
-                <li><a id="logo-container" href="index.html">Inicio</a></li>
-                <li class="active"><a href="index01.html">Fantasía heroica</a></li>
-                <li><a href="index02.html">Ciencia ficción</a></li>
-                <li><a href="#">Infantil</a></li>
-                <li><a href="#">Ensayo</a></li>
-            </ul>
-            <ul class="sidenav" id="nav-mobile">
-                <li><a id="logo-container" href="index.html">Inicio</a></li>
-                <li class="active"><a href="index01.html">Fantasía heroica</a></li>
-                <li><a href="index02.html">Ciencia ficción</a></li>
-                <li><a href="#">Infantil</a></li>
-                <li><a href="#">Ensayo</a></li>
-            </ul>
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        </div>
-    </nav>
+        </nav>
 
         <!-- Contenido -->
         <div class="section no-pad-bot" id="index-banner">
