@@ -16,33 +16,33 @@
     <body>
 
         <!-- Barra de Navegación -->
-        <nav class="yellow darken-4">
+        <nav role="navigation" aria-roledescription="Contenedor del logo del sitio" class="yellow darken-4"> <!-- Mod -->
                 <div role="banner" class="nav-wrapper container"> <!-- Mod -->
                     <a role="link" aria-roledescription="enlace" aria-labelledby="enlace al home" href="index.html" class="brand-logo push-s2">Club de Lectura</a> <!-- Mod -->
                 </div>
         </nav>
-        <nav class="yellow darken-4">
+        <nav role="navigation" aria-roledescription="Barra de navegacion del sitio" class="yellow darken-4"> <!-- Mod -->
             <div class="nav-wrapper container">
-                <ul class="left hide-on-med-and-down">
-                    <li class="active"><a role="link" aria-roledescription="enlace" aria-labelledby="enlace al home" id="logo-container" href="index.html">Inicio</a></li> <!-- Mod -->
-                    <li><a role="link" aria-roledescription="enlace" aria-labelledby="enlace a seccion fantasia" href="index01.html">Fantasía heroica</a></li> <!-- Mod -->
-                    <li><a role="link" aria-roledescription="enlace" aria-labelledby="enlace a seccion ciencia ficcion" href="index02.html">Ciencia ficción</a></li> <!-- Mod -->
-                    <li><a role="link" aria-roledescription="enlace" aria-labelledby="enlace a seccion infantil" href="#">Infantil</a></li> <!-- Mod -->
-                    <li><a role="link" aria-roledescription="enlace" aria-labelledby="enlace a seccion ensayos" href="#">Ensayo</a></li> <!-- Mod -->
+                <ul role="list" aria-label="lista enlaces barra navegacion" class="left hide-on-med-and-down"> <!-- Mod -->
+                    <li role="listitem" aria-label="home" class="active"><a role="link" aria-roledescription="enlace" aria-labelledby="enlace al home" id="logo-container" href="index.html">Inicio</a></li> <!-- Mod -->
+                    <li role="listitem" aria-label="fantasia heroica"><a role="link" aria-roledescription="enlace" aria-labelledby="enlace a seccion fantasia" href="index01.html">Fantasía heroica</a></li> <!-- Mod -->
+                    <li role="listitem" aria-label="ciencia ficcion"><a role="link" aria-roledescription="enlace" aria-labelledby="enlace a seccion ciencia ficcion" href="index02.html">Ciencia ficción</a></li> <!-- Mod -->
+                    <li role="listitem" aria-label="infantil"><a role="link" aria-roledescription="enlace" aria-labelledby="enlace a seccion infantil" href="#">Infantil</a></li> <!-- Mod -->
+                    <li role="listitem" aria-label="ensayo"><a role="link" aria-roledescription="enlace" aria-labelledby="enlace a seccion ensayos" href="#">Ensayo</a></li> <!-- Mod -->
                 </ul>
-                <ul class="sidenav" id="nav-mobile">
-                    <li class="active"><a role="link" aria-roledescription="enlace" aria-labelledby="enlace al home" id="logo-container" href="index.html">Inicio</a></li> <!-- Mod -->
-                    <li><a role="link" aria-roledescription="enlace" aria-labelledby="enlace a seccion fantasia" href="index01.html">Fantasía heroica</a></li> <!-- Mod -->
-                    <li><a role="link" aria-roledescription="enlace" aria-labelledby="enlace a ciencia ficcion" href="index02.html">Ciencia ficción</a></li> <!-- Mod -->
-                    <li><a role="link" aria-roledescription="enlace" aria-labelledby="enlace a seccion infantil" href="#">Infantil</a></li> <!-- Mod -->
-                    <li><a role="link" aria-roledescription="enlace" aria-labelledby="enlace a seccion ensayos" href="#">Ensayo</a></li> <!-- Mod -->
+                <ul role="list" aria-label="lista enlaces barra navegacion" class="sidenav" id="nav-mobile"> <!-- Mod -->
+                    <li role="listitem" aria-label="home" class="active"><a role="link" aria-roledescription="enlace" aria-labelledby="enlace al home" id="logo-container" href="index.html">Inicio</a></li> <!-- Mod -->
+                    <li role="listitem" aria-label="fantasia heroica"><a role="link" aria-roledescription="enlace" aria-labelledby="enlace a seccion fantasia" href="index01.html">Fantasía heroica</a></li> <!-- Mod -->
+                    <li role="listitem" aria-label="ciencia ficcion"><a role="link" aria-roledescription="enlace" aria-labelledby="enlace a ciencia ficcion" href="index02.html">Ciencia ficción</a></li> <!-- Mod -->
+                    <li role="listitem" aria-label="infantil"><a role="link" aria-roledescription="enlace" aria-labelledby="enlace a seccion infantil" href="#">Infantil</a></li> <!-- Mod -->
+                    <li role="listitem" aria-label="ensayo"><a role="link" aria-roledescription="enlace" aria-labelledby="enlace a seccion ensayos" href="#">Ensayo</a></li> <!-- Mod -->
                 </ul>
                 <a role="link" aria-roledescription="enlace" aria-labelledby="enlace a menu" href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a> <!-- Mod -->
             </div>
         </nav>
 
         <!-- Contenido -->
-        <div class="section col s12" id="cabecera">
+        <div role="main" class="section col s12" id="cabecera"> <!-- Mod --> <!-- role="main" indica donde está el contenido principal de la página, si hay sólo uno no hace falta poner label -->
             <div class="section no-pad-bot">
                 <div class="row">
                     <h1 role="heading" aria-labelledby="cabecera club lectura" class="header center white-text">Club de Lectura</h1> <!-- Mod -->
