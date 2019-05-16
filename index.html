@@ -14,30 +14,30 @@
         <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     </head>
     <body>
-        
+
         <!-- Barra de Navegación -->
         <nav class="yellow darken-4">
-                <div class="nav-wrapper container">
-                    <a href="index.html" class="brand-logo push-s2">Club de Lectura</a>
+                <div role="banner" class="nav-wrapper container"> <!-- Mod -->
+                    <a role="link" aria-roledescription="enlace" aria-labelledby="enlace al home" href="index.html" class="brand-logo push-s2">Club de Lectura</a> <!-- Mod -->
                 </div>
         </nav>
         <nav class="yellow darken-4">
             <div class="nav-wrapper container">
                 <ul class="left hide-on-med-and-down">
-                    <li class="active"><a id="logo-container" href="index.html">Inicio</a></li>
-                    <li><a href="index01.html">Fantasía heroica</a></li>
-                    <li><a href="index02.html">Ciencia ficción</a></li>
-                    <li><a href="#">Infantil</a></li>
-                    <li><a href="#">Ensayo</a></li>
+                    <li class="active"><a role="link" aria-roledescription="enlace" aria-labelledby="enlace al home" id="logo-container" href="index.html">Inicio</a></li> <!-- Mod -->
+                    <li><a role="link" aria-roledescription="enlace" aria-labelledby="enlace a seccion fantasia" href="index01.html">Fantasía heroica</a></li> <!-- Mod -->
+                    <li><a role="link" aria-roledescription="enlace" aria-labelledby="enlace a seccion ciencia ficcion" href="index02.html">Ciencia ficción</a></li> <!-- Mod -->
+                    <li><a role="link" aria-roledescription="enlace" aria-labelledby="enlace a seccion infantil" href="#">Infantil</a></li> <!-- Mod -->
+                    <li><a role="link" aria-roledescription="enlace" aria-labelledby="enlace a seccion ensayos" href="#">Ensayo</a></li> <!-- Mod -->
                 </ul>
                 <ul class="sidenav" id="nav-mobile">
-                    <li class="active"><a id="logo-container" href="index.html">Inicio</a></li>
-                    <li><a href="index01.html">Fantasía heroica</a></li>
-                    <li><a href="index02.html">Ciencia ficción</a></li>
-                    <li><a href="#">Infantil</a></li>
-                    <li><a href="#">Ensayo</a></li>
+                    <li class="active"><a role="link" aria-roledescription="enlace" aria-labelledby="enlace al home" id="logo-container" href="index.html">Inicio</a></li> <!-- Mod -->
+                    <li><a role="link" aria-roledescription="enlace" aria-labelledby="enlace a seccion fantasia" href="index01.html">Fantasía heroica</a></li> <!-- Mod -->
+                    <li><a role="link" aria-roledescription="enlace" aria-labelledby="enlace a ciencia ficcion" href="index02.html">Ciencia ficción</a></li> <!-- Mod -->
+                    <li><a role="link" aria-roledescription="enlace" aria-labelledby="enlace a seccion infantil" href="#">Infantil</a></li> <!-- Mod -->
+                    <li><a role="link" aria-roledescription="enlace" aria-labelledby="enlace a seccion ensayos" href="#">Ensayo</a></li> <!-- Mod -->
                 </ul>
-                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <a role="link" aria-roledescription="enlace" aria-labelledby="enlace a menu" href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a> <!-- Mod -->
             </div>
         </nav>
 
@@ -45,7 +45,7 @@
         <div class="section col s12" id="cabecera">
             <div class="section no-pad-bot">
                 <div class="row">
-                    <h1 class="header center white-text">Club de Lectura</h1>
+                    <h1 role="heading" aria-labelledby="cabecera club lectura" class="header center white-text">Club de Lectura</h1> <!-- Mod -->
                 </div>
                 <div class="row">
                     <div class="col s12">
@@ -58,8 +58,8 @@
                                 <p>Busca y descubre nuevas obras que disfrutar. Comenta y discute con otros usuarios que comparten tus intereses.</p>
                             </div>
                             <div class="card-action center">
-                                <a href="#">Regístrate</a>
-                                <a href="#modal-login" class="modal-trigger">Inicia Sesión</a>
+                                <a role="link" aria-roledescription="enlace" aria-labelledby="enlace al formulario de registro" href="#">Regístrate</a> <!-- Mod -->
+                                <a role="button" aria-label="boton ventana iniciar sesion" aria-expanded="false" href="#modal-login" class="modal-trigger">Inicia Sesión</a> <!-- Mod -->
                                 <br>
                             </div>
                             <!-- PopUp Login -->
@@ -67,26 +67,26 @@
                                 <div class="row brown darken-3">
                                     <div class="container">
                                     <br>
-                                    <h2 class="header white-text">Inicia Sesión</h2>
+                                    <h2 role="heading" aria-labelledby="inicio sesion" class="header white-text">Inicia Sesión</h2> <!--Mod -->
                                     <br>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="container">
+                                    <div role="dialog" aria-label="Formulario login" class="container"> <!-- Mod -->
                                     <form id="login">
                                         <div class="input-field">
                                             <br>
                                             <!--<i class="material-icons">person</i>-->
-                                            <input type="text" id="email">
-                                            <label for="email">Email</label>
+                                            <input role="textbox" aria-required="true" aria-labelledby="correo" type="text" id="email"> <!-- Mod -->
+                                            <label id="correo" for="email">Email</label> <!-- Mod -->
                                         </div>
                                         <div class="input-field">
                                             <br>
                                             <!--<i class="material-icons">lock</i>-->
-                                            <input id="password" type="password">
-                                            <label for="password">Contraseña</label>
+                                            <input role="textbox" aria-required="true" aria-labelledby="contra" id="password" type="password"> <!--Movido a Wai-aria password 2.0 -->
+                                            <label id="contra" for="password">Contraseña</label> <!-- Mod -->
                                         </div>
-                                        <div><input class="btn btn-large center" type="submit" value="login"></div>
+                                        <div><input role="button" aria-label="boton login" class="btn btn-large center" type="submit" value="login"></div> <!-- Mod -->
                                     </form>
                                     </div>
                                 </div>
@@ -98,7 +98,7 @@
         </div>
 
         <!-- Footer -->
-        <footer class="page-footer yellow darken-4">
+        <footer role="contentinfo" aria-aria-label="pie de pagina" class="page-footer yellow darken-4"> <!-- Mod -->
             <div class="container">
                 <div class="row">
                     <div class="col l6 s12">
@@ -109,7 +109,7 @@
             </div>
             <div class="footer-copyright">
                 <div class="container">
-                    © UyA - 2018-19 - Made by with <a class="orange-text text-lighten-3" href="http://materializecss.com" target="_blank">Materialize</a> and <a class="orange-text text-lighten-3" href="http://jquery.com/" target="_blank">jQuery</a>.
+                    © UyA - 2018-19 - Made by with <a role="link" aria-roledescription="enlace" aria-labelledby="enlace Materialize" class="orange-text text-lighten-3" href="http://materializecss.com" target="_blank">Materialize</a> and <a role="link" aria-roledescription="enlace" aria-labelledby="enlace a Jquery" class="orange-text text-lighten-3" href="http://jquery.com/" target="_blank">jQuery</a>. <!-- Mod -->
                 </div>
             </div>
         </footer>
