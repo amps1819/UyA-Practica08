@@ -9102,3 +9102,13 @@ input:focus + [role="tooltip"] {
 	position: absolute;
 	top: 100%;
 }
+
+#logo {
+  position: relative;
+}
+
+#logo-img {
+  padding-top: 2%;
+  width: 11%;
+  height: 11%;
+}
