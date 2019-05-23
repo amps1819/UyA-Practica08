@@ -9084,31 +9084,3 @@ input[type=range]::-ms-thumb {
     margin-top: 1.2rem;
   }
 }
-
-#cabecera {
-  background-image: url("../img/fondo.png");
-  background-repeat: no-repeat;
-  height: 90vh;
-  background-size: cover;
-}
-
-input + [role="tooltip"] {
-	display: none;
-}
-
-/* ¿Modificar con js para que se oculte al pulsar ESC? */
-input:focus + [role="tooltip"] {
-	display: block;
-	position: absolute;
-	top: 100%;
-}
-
-#logo {
-  position: relative;
-}
-
-#logo-img {
-  padding-top: 2%;
-  width: 11%;
-  height: 11%;
-}
